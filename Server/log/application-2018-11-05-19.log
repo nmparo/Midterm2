@@ -17,3 +17,13 @@
 {"level":"info","message":"HTTP Server listening on port: %d, in %s mode"}
 {"level":"info","message":"Starting application"}
 {"level":"info","message":"HTTP Server listening on port: %d, in %s mode"}
+{"level":"info","message":"Get Foo %s"}
+{"level":"info","message":"Get Foo %s"}
+{"level":"info","message":"Starting application"}
+{"level":"info","message":"HTTP Server listening on port: %d, in %s mode"}
+{"level":"info","message":"Starting application"}
+{"level":"info","message":"HTTP Server listening on port: %d, in %s mode"}
+{"level":"info","message":"Update Foo %s"}
+{"level":"info","message":"Starting application"}
+{"level":"info","message":"HTTP Server listening on port: %d, in %s mode"}
+{"level":"info","message":"Update Foo %s"}
