@@ -6,14 +6,6 @@ const logger = winston.createLogger({
     format: winston.format.json(),
     transports: [
         new (winston.transports.DailyRotateFile)({
-            level: 'error',
-            filename: 'log/error-%DATE%.log',
-            datePattern: 'YYYY-MM-DD-HH',
-            zippedArchive: true,
-            maxSize: '20m',
-            maxFiles: '14d'
-        }),
-        new (winston.transports.DailyRotateFile)({
             filename: 'log/application-%DATE%.log',
             datePattern: 'YYYY-MM-DD-HH',
             zippedArchive: true,
