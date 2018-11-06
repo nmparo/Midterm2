@@ -21,15 +21,14 @@ module.exports = function (app, config) {
 
     app.use(express.static(config.root + '/public'));
 
-    var users = [{ name: 'John', email: 'woo@hoo.com' },
-    { name: 'Betty', email: 'loo@woo.com' },
-    { name: 'Hal', email: 'boo@woo.com' }
+    var foos = [{ foo: 'John', woo: '123' },
+    { foo: 'Betty', woo: '234' },
+    { foo: 'Hal', woo: '235' }
     ];
 
-    app.get('/api/users', function (req, res) {
-        res.status(200).json(users);
+    app.get('/api/foos', function (req, res) {
+        res.status(200).json(foos);
     });
-
 
     require('../app/controllers/users')(app, config);
 
