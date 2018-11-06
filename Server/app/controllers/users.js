@@ -33,7 +33,7 @@ module.exports = function (app, config) {
 
     router.route('/foos').delete(function(req, res, next){
         logger.log('info', 'Delete Foo %s', req.params.id)
-        res.status(200).json(result);
+        res.send(200).json(obj);
     });
         
 };
