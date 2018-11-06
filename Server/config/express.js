@@ -21,9 +21,9 @@ module.exports = function (app, config) {
 
     app.use(express.static(config.root + '/public'));
 
-    var foos = [{ foo: 'John', woo: '123' },
-    { foo: 'Betty', woo: '234' },
-    { foo: 'Hal', woo: '235' }
+    var foos = [{ foo: 'John', woo: '123', DateDue: '10/11/2018' },
+    { foo: 'Betty', woo: '234', DateDue: '11/15/2018' },
+    { foo: 'Hal', woo: '235', DateDue: '12/17/2018' }
     ];
 
     app.get('/api/foos', function (req, res) {

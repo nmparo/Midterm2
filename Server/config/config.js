@@ -5,17 +5,17 @@ var path = require('path'),
 var config = {  
        development: {    
                    root: rootPath,    
-                   app: {      name: 'UCCSS'    },    
+                   app: {      name: 'midterm'    },    
                    port: 3300,  
         },  
         test: {
                     root: rootPath,    
-                    app: {      name: 'UCCSS'    },    
+                    app: {      name: 'midterm'    },    
                     port: 4000, 
         },
         production: {    
                      root: rootPath,    
-                     app: {      name: 'UCCSS'    },    
+                     app: {      name: 'midterm'    },    
                       port: 80,  }
          };
 
