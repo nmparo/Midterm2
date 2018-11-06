@@ -26,18 +26,10 @@ module.exports = function (app, config) {
         res.status(201).json(obj);
     });
 
-    // router.route('/foos').put(function(req, res, next){
-    //     logger.log('info', 'Update Foo %s', req.params.id)
-    //     res.status(200).json(result);
-    // });
-
-    router.put('/foos', asyncHandler(async (req, res) => {
-        logger.log('info', 'Updating user');
-        await User.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true })
-            .then(result => {
-                res.status(200).json(result);
-            })
-    }));
+    router.route('/foos').put(function(req, res, next){
+        logger.log('info', 'Update Foo %s', req.params.id)
+        res.status(200).json(result);
+    });
 
     router.route('/foos').delete(function(req, res, next){
         logger.log('info', 'Delete Foo %s', req.params.id)
